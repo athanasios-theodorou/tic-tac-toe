@@ -1,15 +1,19 @@
 # Tic-Tac-Toe
 
-A classic Tic-Tac-Toe game built with React, featuring turn-based gameplay, user interaction handling, and a clean, maintainable structure.
+A modern Tic-Tac-Toe web application built with React, focusing on clean component architecture, predictable state updates, and structured game logic.
+
+## Demo 
+
+Live Demo: https://tic-tac-toe-ten-omega-22.vercel.app/
 
 ## Features
 
 - Two-player gameplay (X / O)
-- Editable player names
-- Turn-based state updates
-- Winner and draw detection
+- Dynamic player name editing
+- Turn-based state management
+- Win and draw detection logic
 - Move history tracking
-- Game restart functionality
+- Game reset functionality
 
  ## Installation
 
