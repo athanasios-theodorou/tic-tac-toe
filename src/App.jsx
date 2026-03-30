@@ -17,7 +17,7 @@ const INITIAL_GAME_BOARD = [
   [null, null, null],
 ];
 
-function devireActivePlayer(gameTurns) {
+function deriveActivePlayer(gameTurns) {
   let currentPlayer = "X";
 
   if (gameTurns.length > 0 && gameTurns[0].player === "X") {
@@ -27,7 +27,7 @@ function devireActivePlayer(gameTurns) {
   return currentPlayer;
 }
 
-function devireGameBoard(gameTurns) {
+function deriveGameBoard(gameTurns) {
   let gameBoard = [...INITIAL_GAME_BOARD.map((array) => [...array])];
 
   for (const turn of gameTurns) {
@@ -67,14 +67,14 @@ function App() {
   const [players, setPlayers] = useState(PLAYERS);
   const [gameTurns, setGameTurns] = useState([]);
 
-  const activePlayer = devireActivePlayer(gameTurns);
-  const gameBoard = devireGameBoard(gameTurns);
+  const activePlayer = deriveActivePlayer(gameTurns);
+  const gameBoard = deriveGameBoard(gameTurns);
   const winner = deriveWinner(gameBoard, players);
   const hasDraw = gameTurns.length === 9 && !winner;
 
   function handleSelectSquare(rowIndex, colIndex) {
     setGameTurns((prevTurns) => {
-      const currentPlayer = devireActivePlayer(prevTurns);
+      const currentPlayer = deriveActivePlayer(prevTurns);
 
       const updatedTurns = [
         { square: { row: rowIndex, col: colIndex }, player: currentPlayer },
