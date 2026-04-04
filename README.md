@@ -1,3 +1,6 @@
+#React Project from Brad Triversky.
+
+
 # Tic-Tac-Toe
 
 A modern Tic-Tac-Toe web application built with React, focusing on clean component architecture, predictable state updates, and structured game logic.
