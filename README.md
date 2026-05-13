@@ -4,7 +4,7 @@ A modern Tic-Tac-Toe web application built with React, focusing on clean compone
 
 ## Demo 
 
-Live Demo: https://tic-tac-toe-ten-omega-22.vercel.app/
+[![Play Live](https://img.shields.io/badge/PLAY-LIVE%20DEMO-yellow?style=for-the-badge)](https://tic-tac-toe-by-theod.vercel.app/)
 
 ## Features
 
